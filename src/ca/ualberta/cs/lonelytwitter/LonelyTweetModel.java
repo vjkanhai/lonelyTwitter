@@ -1,5 +1,7 @@
 package ca.ualberta.cs.lonelytwitter;
 
+import java.util.Date;
+
 
 public abstract class LonelyTweetModel
 {
@@ -9,7 +11,7 @@ public abstract class LonelyTweetModel
 	{
 		return text;
 	}
-	public abstract getTweetType();
+	public abstract String getTweetType();
 	public abstract void setText(String text);
 	public Date getTimestamp()
 	{

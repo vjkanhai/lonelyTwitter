@@ -12,9 +12,9 @@ public class NormalTweetModel extends LonelyTweetModel
 	{
 		
 	}
-	public getTweetType()
+	public String getTweetType()
 	{
-		type = "Normal";
+		String type = "Normal";
 		return type;
 	}
 }

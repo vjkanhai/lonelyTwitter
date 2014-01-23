@@ -1,5 +1,7 @@
 package ca.ualberta.cs.lonelytwitter;
 
+import java.util.Date;
+
 
 public class ImportantTweetModel extends LonelyTweetModel
 {
@@ -10,14 +12,15 @@ public class ImportantTweetModel extends LonelyTweetModel
 	public ImportantTweetModel(String text)
 	{
 		super(text);
+		super.timestamp = new Date(System.currentTimeMillis());
 	}
 	public void setText(String text)
 	{
 		this.text = text;
 	}
-	public getTweetType()
+	public String getTweetType()
 	{
-		type = "Important";
+		String type = "Important";
 		return type;
 	}
 }
