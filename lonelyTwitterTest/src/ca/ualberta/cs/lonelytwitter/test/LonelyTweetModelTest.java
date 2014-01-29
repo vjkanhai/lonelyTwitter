@@ -20,7 +20,7 @@ public class LonelyTweetModelTest extends ActivityInstrumentationTestCase2<Lonel
 		assertEquals("5 should equal 5", 5, 5);
 	}
 	
-	public void equalsTest()
+	public void testEquals()
 	{
 		Date testdate = new Date();
 		NormalTweetModel tweet1 = new NormalTweetModel("fu", testdate);
@@ -33,6 +33,5 @@ public class LonelyTweetModelTest extends ActivityInstrumentationTestCase2<Lonel
 		assertEquals("Equals returns false on unequal tweet text", false, tweet1.equals(tweet3));
 		assertEquals("Equals returns true on equal tweets (NormalTweetModel version)", true, tweet4.equals(tweet3));
 		assertEquals("Equals returns true on equal tweets (ImportantTweetModel version)", true, tweet5.equals(tweet2));
-		fail("Like actually");
 	}
 }
